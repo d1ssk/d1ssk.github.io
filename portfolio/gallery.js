@@ -77,7 +77,10 @@
     }
 
     ["Camera", "Lens"].forEach((label) => {
-      entries.filter((entry) => entry.label === label).forEach((entry) => appendDetail(entry.label, entry.value));
+      entries.filter((entry) => entry.label === label).forEach((entry) => {
+        const pair = appendDetail(entry.label, entry.value);
+        pair.querySelector("dt").className = "visually-hidden";
+      });
     });
 
     const settings = settingsLabels.flatMap((label) => entries.filter((entry) => entry.label === label));

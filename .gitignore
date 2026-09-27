@@ -1,3 +1,6 @@
 .DS_Store
 portfolio/assets/pool/*
 portfolio/scripts/__pycache__/
+
+# Local design explorations and other unpublished work.
+/.local/

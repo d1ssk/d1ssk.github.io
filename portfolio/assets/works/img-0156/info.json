@@ -3,12 +3,38 @@
   "location": "",
   "description": "",
   "alt": "A broad sandy beach with city buildings beneath a clear blue sky.",
-  "details": [],
+  "details": [
+    {
+      "label": "Camera",
+      "value": "Sony SO-03L"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.6"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/5000 s"
+    },
+    {
+      "label": "ISO",
+      "value": "64"
+    },
+    {
+      "label": "Focal length",
+      "value": "4.26 mm"
+    },
+    {
+      "label": "Captured",
+      "value": "2020-02-19 07:26:09 +07:00"
+    }
+  ],
   "source": "assets/pool/IMG_0156.JPG",
   "image": {
     "width": 1200,
     "height": 675,
     "fullWidth": 2400,
     "fullHeight": 1350
-  }
+  },
+  "visibility": {}
 }

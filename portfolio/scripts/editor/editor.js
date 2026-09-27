@@ -89,8 +89,12 @@
   const metadataForm = document.querySelector('#metadata-form');
   const metadataFields = document.querySelector('#metadata-fields');
   const metadataDetails = document.querySelector('#metadata-details');
+  const detailCopy = document.querySelector('#detail-copy');
+  const copyPanel = document.querySelector('#metadata-copy');
+  const copySources = document.querySelector('#metadata-copy-sources');
+  const copyStatus = document.querySelector('#metadata-copy-status');
   let editingId;
-  const fieldNames = { title: 'タイトル', location: '場所', description: '説明', alt: '代替テキスト（読み上げ用）' };
+  const fieldNames = { title: 'タイトル', location: 'Location（場所）', description: '説明', alt: '代替テキスト（読み上げ用）' };
 
   function inputLabel(text, input) {
     const label = document.createElement('label');
@@ -171,6 +175,7 @@
     for (const entry of entries) {
       const term = document.createElement('dt'), value = document.createElement('dd');
       term.textContent = entry.label; value.textContent = entry.value;
+      if (['Camera', 'Lens'].includes(entry.label)) term.className = 'visually-hidden';
       list.append(term, value);
     }
     if (entries.length) preview.append(list);
@@ -184,12 +189,18 @@
     document.querySelector('#metadata-id').textContent = id;
     document.querySelector('#metadata-image').src = `/assets/works/${encodeURIComponent(id)}/thumbnail.webp`;
     metadataFields.replaceChildren(); metadataDetails.replaceChildren();
+    copyPanel.hidden = true;
+    detailCopy.setAttribute('aria-expanded', 'false');
+    detailCopy.disabled = Object.keys(works).length < 2;
+    copyStatus.textContent = '';
+    copySources.replaceChildren();
     for (const [key, label] of Object.entries(fieldNames)) {
       const row = document.createElement('div');
       row.className = 'metadata-field'; row.dataset.field = key;
       const input = document.createElement('textarea');
       input.rows = key === 'description' ? 4 : 2;
       input.value = info[key] || '';
+      if (key === 'location') input.placeholder = '例：Tokyo, Japan / 東京都';
       row.append(inputLabel(label, input));
       if (key !== 'alt') row.append(visibilityCheckbox(info.visibility?.[key] !== false));
       metadataFields.append(row);
@@ -205,6 +216,43 @@
   metadataForm.addEventListener('input', updateMetadataPreview);
   document.querySelector('#detail-add').addEventListener('click', () => {
     const input = addDetail(); updateMetadataPreview(); input.focus();
+  });
+  detailCopy.addEventListener('click', () => {
+    copyPanel.hidden = !copyPanel.hidden;
+    detailCopy.setAttribute('aria-expanded', String(!copyPanel.hidden));
+    if (copyPanel.hidden) return;
+    copyStatus.textContent = '';
+    copySources.replaceChildren();
+    const included = new Set(collection);
+    const sources = [...collection, ...Object.keys(works).filter(id => !included.has(id))];
+    for (const id of sources) {
+      if (id === editingId) continue;
+      const info = works[id];
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'metadata-copy-source'; button.dataset.id = id;
+      button.setAttribute('aria-label', `${info.title || id} から不足項目をコピー`);
+      const image = document.createElement('img');
+      image.src = `/assets/works/${encodeURIComponent(id)}/thumbnail.webp`;
+      image.alt = ''; image.loading = 'lazy'; image.width = info.image.width; image.height = info.image.height;
+      const caption = document.createElement('span');
+      caption.textContent = `${info.title ? `${info.title} · ` : ''}${id}${included.has(id) ? '' : '（非表示）'}`;
+      button.append(image, caption);
+      button.addEventListener('click', () => {
+        const present = new Set([...metadataDetails.querySelectorAll('[data-part="label"]')].map(input => input.value.trim()));
+        let copied = 0;
+        for (const entry of info.details || []) {
+          const label = String(entry.label || '').trim();
+          if (!label || present.has(label)) continue;
+          addDetail(entry); present.add(label); copied++;
+        }
+        updateMetadataPreview();
+        copyPanel.hidden = true;
+        detailCopy.setAttribute('aria-expanded', 'false');
+        copyStatus.textContent = copied ? `${id} から ${copied} 項目をコピーしました。` : 'この写真から追加できる項目はありません。';
+        detailCopy.focus({ preventScroll: true });
+      });
+      copySources.append(button);
+    }
   });
   document.querySelector('#metadata-cancel').addEventListener('click', () => metadataDialog.close());
   metadataDialog.addEventListener('close', () => {

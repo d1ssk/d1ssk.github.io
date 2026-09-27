@@ -7,6 +7,35 @@
     {
       "label": "Captured",
       "value": "2024-09-15 18:03:29 +09:00"
+    },
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3",
+      "show": true
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.8"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/10 s"
+    },
+    {
+      "label": "ISO",
+      "value": "320"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
     }
   ],
   "source": "assets/pool/DSC02346-EDIT.jpg",
@@ -15,5 +44,6 @@
     "height": 800,
     "fullWidth": 2400,
     "fullHeight": 1600
-  }
+  },
+  "visibility": {}
 }

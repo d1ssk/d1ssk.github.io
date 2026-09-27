@@ -48,14 +48,23 @@
         <div><h2 id="metadata-title">作品情報</h2><span id="metadata-id" class="hint"></span></div>
         <button type="button" id="metadata-cancel">キャンセル</button>
       </header>
-      <p class="hint">「表示」で公開ページに出す項目を選べます。非表示にしても値は残ります。空欄の項目は表示されません。</p>
+      <p class="hint">「表示」で公開ページに出す項目を選べます。Location（場所）に撮影地を入力できます。非表示にしても値は残ります。空欄の項目は表示されません。</p>
       <div class="metadata-layout">
         <div>
           <div id="metadata-fields"></div>
           <h3>詳細情報</h3>
-          <p class="hint">撮影条件や制作年・画材など。Camera / Lens / Aperture / Shutter speed / ISO は項目名を保つと公開ページでまとめて表示されます。</p>
+          <p class="hint">撮影条件や制作年・画材など。Camera / Lens は機材名だけを表示します。Aperture / Shutter speed / ISO は項目名を保つと公開ページでまとめて表示されます。</p>
           <div id="metadata-details"></div>
-          <button type="button" id="detail-add">＋ 項目を追加</button>
+          <div class="metadata-detail-actions">
+            <button type="button" id="detail-add">＋ 項目を追加</button>
+            <button type="button" id="detail-copy" aria-expanded="false" aria-controls="metadata-copy">他の写真からコピー</button>
+          </div>
+          <section id="metadata-copy" class="metadata-copy" aria-labelledby="metadata-copy-title" hidden>
+            <h3 id="metadata-copy-title">コピー元の写真を選択</h3>
+            <p class="hint">詳細情報のうち、今の写真にない項目名の項目と値をコピーします。表示設定も引き継ぎます。</p>
+            <div id="metadata-copy-sources" class="metadata-copy-sources" role="group" aria-label="コピー元の写真"></div>
+          </section>
+          <p id="metadata-copy-status" class="hint" role="status"></p>
           <details class="metadata-system"><summary>元ファイル・画像寸法（参照用）</summary><pre id="metadata-system"></pre></details>
         </div>
         <aside class="metadata-preview" aria-label="表示内容のプレビュー">
