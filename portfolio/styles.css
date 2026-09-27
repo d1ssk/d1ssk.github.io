@@ -354,29 +354,31 @@ main {
 
   .viewer-work,
   .viewer-work.has-info {
+    display: flex;
     grid-column: 1 / -1;
     grid-row: 1;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
-    gap: 0;
+    flex-direction: column;
+    justify-content: safe center;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .viewer-image-wrap {
-    grid-row: 2;
+    flex-shrink: 0;
     height: auto;
   }
 
   .viewer-work img {
     height: auto;
-    max-height: min(48dvh, 28rem, var(--viewer-image-max-height, 48dvh));
+    max-height: var(--viewer-image-max-height, 100dvh);
   }
 
   .viewer-info {
-    grid-row: 3;
-    align-self: start;
-    margin-top: 1rem;
-    max-height: calc(100% - 1rem);
-    overscroll-behavior: contain;
+    flex-shrink: 0;
+    align-self: stretch;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .viewer-nav {

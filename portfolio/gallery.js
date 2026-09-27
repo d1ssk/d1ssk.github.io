@@ -54,13 +54,8 @@
       return;
     }
 
-    const height = viewerWork.clientHeight;
-    const infoHeight = information.hidden ? 0 : information.scrollHeight +
-      parseFloat(getComputedStyle(information).marginTop);
-    // Reserve equal space above and below the photo so its information fits below.
-    // Very long descriptions can scroll without reducing the photo to nothing.
-    const imageHeight = Math.max(height * 0.25, height - 2 * infoHeight);
-    viewerWork.style.setProperty("--viewer-image-max-height", `${imageHeight}px`);
+    // Fit the image to the available viewport; its information scrolls below it.
+    viewerWork.style.setProperty("--viewer-image-max-height", `${viewerWork.clientHeight}px`);
   }
 
   function scheduleViewerLayout() {
@@ -71,7 +66,6 @@
   if ("ResizeObserver" in window) {
     const observer = new ResizeObserver(scheduleViewerLayout);
     observer.observe(viewerWork);
-    observer.observe(information);
   }
   window.addEventListener("resize", scheduleViewerLayout);
   document.fonts?.ready.then(scheduleViewerLayout);
