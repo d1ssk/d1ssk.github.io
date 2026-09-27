@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Printed cards arranged in a wooden display beside a bowl.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/4"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/50 s"
+    },
+    {
+      "label": "ISO",
+      "value": "2500"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2024-09-19 13:32:06 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC02432.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

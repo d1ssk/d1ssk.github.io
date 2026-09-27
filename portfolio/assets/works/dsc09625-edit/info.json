@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "People gathered outside a cafe beneath a leafy street tree.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2023-10-14 16:32:22 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC09625-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 936,
+    "fullWidth": 2400,
+    "fullHeight": 1872
+  }
+}

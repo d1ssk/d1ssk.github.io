@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "The silhouette of a person on a road lit by streetlights at night.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/2"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/13 s"
+    },
+    {
+      "label": "ISO",
+      "value": "12800"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2025-08-31 02:05:49 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC04137.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

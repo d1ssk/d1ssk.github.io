@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A red-and-white train beneath a purple evening sky and overhead wires.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/4"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/160 s"
+    },
+    {
+      "label": "ISO",
+      "value": "1250"
+    },
+    {
+      "label": "Focal length",
+      "value": "28 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "28 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-08-31 21:02:10 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC01163.JPG",
+  "image": {
+    "width": 1200,
+    "height": 802,
+    "fullWidth": 1616,
+    "fullHeight": 1080
+  }
+}

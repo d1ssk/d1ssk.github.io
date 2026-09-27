@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A water bottle on a table beside a bright window.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/4"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/640 s"
+    },
+    {
+      "label": "ISO",
+      "value": "5000"
+    },
+    {
+      "label": "Focal length",
+      "value": "33 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "33 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "+0.3 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-08-31 19:44:42 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC01124.JPG",
+  "image": {
+    "width": 1200,
+    "height": 802,
+    "fullWidth": 1616,
+    "fullHeight": 1080
+  }
+}

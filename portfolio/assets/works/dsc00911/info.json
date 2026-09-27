@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "An orange evening sky above the dark silhouette of a roof and utility pole.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/5"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/160 s"
+    },
+    {
+      "label": "ISO",
+      "value": "8000"
+    },
+    {
+      "label": "Focal length",
+      "value": "60 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "60 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-08-27 20:43:25 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC00911.JPG",
+  "image": {
+    "width": 1200,
+    "height": 802,
+    "fullWidth": 1616,
+    "fullHeight": 1080
+  }
+}

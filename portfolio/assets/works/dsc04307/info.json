@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Foamy water in the wake of a boat, seen from its side.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/3.5"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/2000 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2025-08-31 16:41:34 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC04307.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

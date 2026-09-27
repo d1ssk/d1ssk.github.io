@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Orange flowers and green leaves against a pale blue sky.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.8"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/2000 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2025-08-31 14:52:49 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC04280.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

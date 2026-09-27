@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A cat peeking over the edge of an open window against a blue sky.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/11"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/125 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "70 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "70 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-11-10 13:23:23 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC03656.JPG",
+  "image": {
+    "width": 1200,
+    "height": 802,
+    "fullWidth": 1616,
+    "fullHeight": 1080
+  }
+}

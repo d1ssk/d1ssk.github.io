@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Several bursts of fireworks against a black night sky.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2022-08-02 19:57:25 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC08300-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

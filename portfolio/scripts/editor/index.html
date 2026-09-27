@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Portfolio — Layout editor</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/editor/editor.css">
+  <script src="/information.js" defer></script>
+  <script src="/layout.js" defer></script>
+  <script src="/editor/editor.js" defer></script>
+</head>
+<body>
+  <header class="editor-header">
+    <div><span class="eyebrow">LOCAL / DEVELOPER</span><h1>Portfolio editor</h1></div>
+    <a href="/" target="_blank" rel="noopener">公開ページを確認 ↗</a>
+  </header>
+  <main class="editor-main">
+    <p>画像をドラッグして配置。左上からの順序を基準に、2列・1列へ展開します。Deleteした作品は下の「非表示」に残ります。</p>
+    <div class="toolbar">
+      <div class="columns" role="group" aria-label="列数のプレビュー">
+        <button type="button" data-columns="3" aria-pressed="true">3列 · 編集</button>
+        <button type="button" data-columns="2" aria-pressed="false">2列</button>
+        <button type="button" data-columns="1" aria-pressed="false">1列</button>
+      </div>
+      <button type="button" id="undo" disabled>元に戻す</button>
+      <button type="button" id="redo" disabled>やり直す</button>
+      <button type="button" id="save" class="primary" disabled>保存</button>
+      <span id="status" role="status">読み込み中…</span>
+    </div>
+    <p class="hint">画像にフォーカスして矢印キーでも移動できます。タッチでは画像右上の ⠿ をドラッグ。Escで移動を取り消せます。保存はローカルの公開HTMLに反映されます。</p>
+    <section aria-labelledby="active-title">
+      <h2 id="active-title">公開 <span id="active-count"></span></h2>
+      <div id="active" class="gallery editor-gallery" style="--columns:3"></div>
+      <p id="active-empty" hidden>公開する作品がありません。下の作品を復活できます。</p>
+    </section>
+    <section class="excluded" aria-labelledby="excluded-title">
+      <h2 id="excluded-title">非表示 <span id="excluded-count"></span></h2>
+      <p>画像ファイルは保持されます。「復活」で公開リストの末尾へ戻せます。</p>
+      <div id="excluded" class="excluded-grid"></div>
+      <p id="excluded-empty" hidden>非表示の作品はありません。</p>
+    </section>
+  </main>
+  <dialog id="metadata-dialog" aria-labelledby="metadata-title">
+    <form id="metadata-form">
+      <header class="metadata-header">
+        <div><h2 id="metadata-title">作品情報</h2><span id="metadata-id" class="hint"></span></div>
+        <button type="button" id="metadata-cancel">キャンセル</button>
+      </header>
+      <p class="hint">「表示」で公開ページに出す項目を選べます。非表示にしても値は残ります。空欄の項目は表示されません。</p>
+      <div class="metadata-layout">
+        <div>
+          <div id="metadata-fields"></div>
+          <h3>詳細情報</h3>
+          <p class="hint">撮影条件や制作年・画材など。Camera / Lens / Aperture / Shutter speed / ISO は項目名を保つと公開ページでまとめて表示されます。</p>
+          <div id="metadata-details"></div>
+          <button type="button" id="detail-add">＋ 項目を追加</button>
+          <details class="metadata-system"><summary>元ファイル・画像寸法（参照用）</summary><pre id="metadata-system"></pre></details>
+        </div>
+        <aside class="metadata-preview" aria-label="表示内容のプレビュー">
+          <img id="metadata-image" alt="">
+          <h3>表示内容のプレビュー</h3>
+          <div id="metadata-preview"></div>
+        </aside>
+      </div>
+      <footer class="metadata-footer">
+        <span class="hint">適用後、ページ上部の「保存」でJSONと公開HTMLを更新します。</span>
+        <button type="submit" class="primary">変更を適用</button>
+      </footer>
+    </form>
+  </dialog>
+</body>
+</html>

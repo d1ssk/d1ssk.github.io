@@ -1,0 +1,43 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Temple towers silhouetted against an orange sky.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "Sony SO-03L"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/2.4"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/400 s"
+    },
+    {
+      "label": "ISO",
+      "value": "40"
+    },
+    {
+      "label": "Focal length",
+      "value": "5.95 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2020-02-19 06:43:26 +07:00"
+    }
+  ],
+  "source": "assets/pool/DSC_4569.JPG",
+  "image": {
+    "width": 1200,
+    "height": 675,
+    "fullWidth": 2400,
+    "fullHeight": 1350
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A domed building at the end of a street lined with stone facades.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2023-10-14 17:13:30 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC09640-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

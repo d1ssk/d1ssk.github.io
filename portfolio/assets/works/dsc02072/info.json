@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A hiker on a rocky hillside beneath large white clouds and a blue sky.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/7.1"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/800 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2024-08-17 14:34:14 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC02072.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

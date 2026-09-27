@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "The low sun shining over a road and silhouetted city buildings.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/9"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/400 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "70 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "70 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-09-21 10:38:07 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC03271_1.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

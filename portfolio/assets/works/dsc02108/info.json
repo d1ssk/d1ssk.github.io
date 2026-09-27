@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A water tower above a white building, with flowers in the foreground.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/9"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/640 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "42 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "42 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-09-15 08:30:59 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC02108.JPG",
+  "image": {
+    "width": 1200,
+    "height": 802,
+    "fullWidth": 1616,
+    "fullHeight": 1080
+  }
+}

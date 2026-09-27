@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Rows of golden pastries on illuminated bakery shelves.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/4"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/160 s"
+    },
+    {
+      "label": "ISO",
+      "value": "640"
+    },
+    {
+      "label": "Focal length",
+      "value": "29 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "29 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2023-10-16 21:12:12 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC09874.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

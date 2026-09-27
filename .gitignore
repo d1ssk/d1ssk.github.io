@@ -1,1 +1,3 @@
 .DS_Store
+portfolio/assets/pool/*
+portfolio/scripts/__pycache__/

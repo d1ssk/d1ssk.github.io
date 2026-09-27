@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A suspension bridge and waterfront buildings in golden evening light.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2020-08-25 17:48:42 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC05868-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 830,
+    "fullWidth": 2400,
+    "fullHeight": 1659
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "People in a small boat on a lake, with pink flowers in the foreground.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "Sony SO-03L"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.6"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/2000 s"
+    },
+    {
+      "label": "ISO",
+      "value": "64"
+    },
+    {
+      "label": "Focal length",
+      "value": "4.26 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2020-02-19 07:26:09 +07:00"
+    }
+  ],
+  "source": "assets/pool/DSC_4628-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 675,
+    "fullWidth": 2400,
+    "fullHeight": 1350
+  }
+}

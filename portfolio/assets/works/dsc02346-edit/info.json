@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "The profile of a person silhouetted at dusk, with blurred lights behind them.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2024-09-15 18:03:29 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC02346-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

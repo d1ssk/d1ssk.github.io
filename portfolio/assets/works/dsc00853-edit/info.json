@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "Red autumn leaves framing the corner of a wooden building.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2024-05-11 13:03:23 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC00853.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

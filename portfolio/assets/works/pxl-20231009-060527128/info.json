@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A waterbird seen from behind on a lawn beside a pond.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "Google Pixel 7a"
+    },
+    {
+      "label": "Lens",
+      "value": "Pixel 7a back camera 5.43mm f/1.89"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.89"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/50 s"
+    },
+    {
+      "label": "ISO",
+      "value": "367"
+    },
+    {
+      "label": "Focal length",
+      "value": "5.43 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "51 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2023-10-09 07:05:27 +01:00"
+    }
+  ],
+  "source": "assets/pool/PXL_20231009_060527128.jpg",
+  "image": {
+    "width": 1200,
+    "height": 675,
+    "fullWidth": 2400,
+    "fullHeight": 1350
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A river reflecting a bridge and trees in black and white.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2023-10-14 16:25:31 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC09620-EDIT.jpg",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}

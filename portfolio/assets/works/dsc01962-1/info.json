@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "location": "",
+  "description": "",
+  "alt": "A car stopped at a red traffic light against a warm sunset sky.",
+  "details": [
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/5.6"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/80 s"
+    },
+    {
+      "label": "ISO",
+      "value": "3200"
+    },
+    {
+      "label": "Focal length",
+      "value": "68 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "68 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
+    },
+    {
+      "label": "Captured",
+      "value": "2019-09-14 10:01:46 +09:00"
+    }
+  ],
+  "source": "assets/pool/DSC01962_1.JPG",
+  "image": {
+    "width": 1200,
+    "height": 800,
+    "fullWidth": 2400,
+    "fullHeight": 1600
+  }
+}
