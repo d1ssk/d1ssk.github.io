@@ -357,33 +357,26 @@ main {
     grid-column: 1 / -1;
     grid-row: 1;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr);
-    overflow-y: auto;
-    overscroll-behavior: contain;
+    grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 0;
   }
 
-  .viewer-work.has-info {
-    grid-template-rows: auto auto;
-    align-content: start;
-  }
-
-  .viewer-work.has-info .viewer-image-wrap {
+  .viewer-image-wrap {
+    grid-row: 2;
     height: auto;
   }
 
-  .viewer-work.has-info .viewer-image-wrap img {
+  .viewer-work img {
     height: auto;
-    max-height: min(48dvh, 28rem);
+    max-height: min(48dvh, 28rem, var(--viewer-image-max-height, 48dvh));
   }
 
   .viewer-info {
-    max-height: none;
-    overflow: visible;
-  }
-
-  .viewer-details {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.1rem 1.5rem;
+    grid-row: 3;
+    align-self: start;
+    margin-top: 1rem;
+    max-height: calc(100% - 1rem);
+    overscroll-behavior: contain;
   }
 
   .viewer-nav {

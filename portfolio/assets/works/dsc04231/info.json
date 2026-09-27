@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "豊島、香川 / Teshima, Kagawa",
   "description": "",
   "alt": "Two round roadside mirrors above a yellow sign beside the sea.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 800,
     "fullWidth": 2400,
     "fullHeight": 1600
-  }
+  },
+  "visibility": {}
 }

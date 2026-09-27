@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "Kensington Gardens, London",
   "description": "",
   "alt": "A waterbird facing the camera on grass, with a brick building and pond behind it.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 675,
     "fullWidth": 2400,
     "fullHeight": 1350
-  }
+  },
+  "visibility": {}
 }

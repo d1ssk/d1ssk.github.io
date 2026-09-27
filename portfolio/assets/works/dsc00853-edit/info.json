@@ -1,12 +1,44 @@
 {
   "title": "",
-  "location": "",
+  "location": "大山、神奈川県 / Mt. Oyama, Kanagawa",
   "description": "",
   "alt": "Red autumn leaves framing the corner of a wooden building.",
   "details": [
     {
       "label": "Captured",
       "value": "2024-05-11 13:03:23 +09:00"
+    },
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 50mm F1.8"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/1.8"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/800 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "50 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "50 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
     }
   ],
   "source": "assets/pool/DSC00853.JPG",
@@ -15,5 +47,6 @@
     "height": 800,
     "fullWidth": 2400,
     "fullHeight": 1600
-  }
+  },
+  "visibility": {}
 }

@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "New Braunfels, Texas",
   "description": "",
   "alt": "A water tower above a white building, with flowers in the foreground.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 802,
     "fullWidth": 1616,
     "fullHeight": 1080
-  }
+  },
+  "visibility": {}
 }

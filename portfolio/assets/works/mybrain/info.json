@@ -1,0 +1,20 @@
+{
+  "title": "A Portrait from Within",
+  "location": "",
+  "description": "My cerebrum, reconstructed from MRI scans through image segmentation and 3D-printed in PLA.",
+  "alt": "A light blue brain model resting on orange fabric.",
+  "details": [
+    {
+      "label": "Captured",
+      "value": "2026-09-27 23:28:15 +09:00"
+    }
+  ],
+  "source": "assets/pool/mybrain.jpg",
+  "image": {
+    "width": 1200,
+    "height": 859,
+    "fullWidth": 2288,
+    "fullHeight": 1637
+  },
+  "visibility": {}
+}

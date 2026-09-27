@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "北京站 / Beijing Railway Station",
   "description": "",
   "alt": "Sunlight falling across railway tracks and a station platform under a metal roof.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 802,
     "fullWidth": 1616,
     "fullHeight": 1080
-  }
+  },
+  "visibility": {}
 }

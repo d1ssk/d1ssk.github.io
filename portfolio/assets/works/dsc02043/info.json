@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "富士山 / Mt. Fuji",
   "description": "",
   "alt": "Three yellow rubber ducks lined up against a cloudy sky.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 800,
     "fullWidth": 2400,
     "fullHeight": 1600
-  }
+  },
+  "visibility": {}
 }

@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "Озеро Байкал, Иркутск / Lake Baikal, Irkutsk",
   "description": "",
   "alt": "Sunlight shimmering on blue-green water.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 802,
     "fullWidth": 1616,
     "fullHeight": 1080
-  }
+  },
+  "visibility": {}
 }

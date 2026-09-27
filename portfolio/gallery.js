@@ -44,6 +44,37 @@
   let informationVersion = 0;
   const informationCache = new Map();
   const settingsLabels = ["Aperture", "Shutter speed", "ISO"];
+  const mobileViewer = window.matchMedia("(max-width: 43rem)");
+  let viewerLayoutFrame;
+
+  function layoutViewer() {
+    if (!viewer.open) return;
+    if (!mobileViewer.matches) {
+      viewerWork.style.removeProperty("--viewer-image-max-height");
+      return;
+    }
+
+    const height = viewerWork.clientHeight;
+    const infoHeight = information.hidden ? 0 : information.scrollHeight +
+      parseFloat(getComputedStyle(information).marginTop);
+    // Reserve equal space above and below the photo so its information fits below.
+    // Very long descriptions can scroll without reducing the photo to nothing.
+    const imageHeight = Math.max(height * 0.25, height - 2 * infoHeight);
+    viewerWork.style.setProperty("--viewer-image-max-height", `${imageHeight}px`);
+  }
+
+  function scheduleViewerLayout() {
+    cancelAnimationFrame(viewerLayoutFrame);
+    viewerLayoutFrame = requestAnimationFrame(layoutViewer);
+  }
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(scheduleViewerLayout);
+    observer.observe(viewerWork);
+    observer.observe(information);
+  }
+  window.addEventListener("resize", scheduleViewerLayout);
+  document.fonts?.ready.then(scheduleViewerLayout);
 
   function clearInformation() {
     title.textContent = "";
@@ -54,6 +85,7 @@
     information.hidden = true;
     viewerWork.classList.remove("has-info");
     viewer.removeAttribute("aria-labelledby");
+    scheduleViewerLayout();
   }
 
   function displayInformation(rawInfo) {
@@ -102,6 +134,7 @@
     information.hidden = !hasInformation;
     viewerWork.classList.toggle("has-info", hasInformation);
     if (title.textContent) viewer.setAttribute("aria-labelledby", "viewer-title");
+    scheduleViewerLayout();
   }
 
   function loadInformation(url) {
@@ -121,11 +154,20 @@
   function showWork(index) {
     activeIndex = (index + links.length) % links.length;
     const link = links[activeIndex];
+    const version = ++informationVersion;
+    // Browsers can keep painting the previous image while the new source loads.
+    image.style.visibility = "hidden";
     image.src = link.href;
     image.alt = link.querySelector("img").alt;
+    image.decode().then(() => {
+      if (version === informationVersion) image.style.removeProperty("visibility");
+    }).catch(() => {
+      // Keep failed or superseded image requests out of the viewer.
+    });
     count.textContent = `${activeIndex + 1} / ${links.length}`;
     clearInformation();
-    const version = ++informationVersion;
+    viewerWork.scrollTop = 0;
+    information.scrollTop = 0;
     loadInformation(link.dataset.info).then((info) => {
       if (version === informationVersion) displayInformation(info);
     }).catch(() => {

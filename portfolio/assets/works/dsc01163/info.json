@@ -1,6 +1,6 @@
 {
   "title": "",
-  "location": "",
+  "location": "Замын-Үүд, Монгол / Zamyn-Üüd, Mongolia",
   "description": "",
   "alt": "A red-and-white train beneath a purple evening sky and overhead wires.",
   "details": [
@@ -47,5 +47,6 @@
     "height": 802,
     "fullWidth": 1616,
     "fullHeight": 1080
-  }
+  },
+  "visibility": {}
 }
