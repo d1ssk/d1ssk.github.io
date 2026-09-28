@@ -7,6 +7,38 @@
     {
       "label": "Captured",
       "value": "2022-08-02 19:57:25 +09:00"
+    },
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/13"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "10 s"
+    },
+    {
+      "label": "ISO",
+      "value": "50"
+    },
+    {
+      "label": "Focal length",
+      "value": "30 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "30 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
     }
   ],
   "source": "assets/pool/DSC08300-EDIT.jpg",

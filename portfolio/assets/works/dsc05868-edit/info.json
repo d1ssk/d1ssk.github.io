@@ -7,6 +7,38 @@
     {
       "label": "Captured",
       "value": "2020-08-25 17:48:42 +09:00"
+    },
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/16"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/80 s"
+    },
+    {
+      "label": "ISO",
+      "value": "320"
+    },
+    {
+      "label": "Focal length",
+      "value": "63 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "63 mm"
+    },
+    {
+      "label": "Exposure compensation",
+      "value": "0 EV"
     }
   ],
   "source": "assets/pool/DSC05868-EDIT.jpg",
@@ -15,5 +47,6 @@
     "height": 830,
     "fullWidth": 2400,
     "fullHeight": 1659
-  }
+  },
+  "visibility": {}
 }
