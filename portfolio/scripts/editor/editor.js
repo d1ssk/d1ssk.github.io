@@ -175,7 +175,7 @@
     for (const entry of entries) {
       const term = document.createElement('dt'), value = document.createElement('dd');
       term.textContent = entry.label; value.textContent = entry.value;
-      if (['Camera', 'Lens'].includes(entry.label)) term.className = 'visually-hidden';
+      if (['Camera', 'Lens', 'Location'].includes(entry.label)) term.className = 'visually-hidden';
       list.append(term, value);
     }
     if (entries.length) preview.append(list);

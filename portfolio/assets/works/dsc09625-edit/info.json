@@ -7,6 +7,34 @@
     {
       "label": "Captured",
       "value": "2023-10-14 16:32:22 +09:00"
+    },
+    {
+      "label": "Camera",
+      "value": "SONY ILCE-7M3"
+    },
+    {
+      "label": "Lens",
+      "value": "FE 28-70mm F3.5-5.6 OSS"
+    },
+    {
+      "label": "Aperture",
+      "value": "f/5.6"
+    },
+    {
+      "label": "Shutter speed",
+      "value": "1/125 s"
+    },
+    {
+      "label": "ISO",
+      "value": "100"
+    },
+    {
+      "label": "Focal length",
+      "value": "28 mm"
+    },
+    {
+      "label": "35mm equivalent",
+      "value": "28 mm"
     }
   ],
   "source": "assets/pool/DSC09625-EDIT.jpg",

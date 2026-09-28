@@ -6,7 +6,7 @@
   "details": [
     {
       "label": "Camera",
-      "value": "Sony SO-03L"
+      "value": "Sony Xperia 1 SO-03L"
     },
     {
       "label": "Aperture",
@@ -39,5 +39,6 @@
     "height": 675,
     "fullWidth": 2400,
     "fullHeight": 1350
-  }
+  },
+  "visibility": {}
 }

@@ -122,7 +122,10 @@
     }
 
     entries.filter((entry) => !["Camera", "Lens", ...settingsLabels].includes(entry.label))
-      .forEach((entry) => appendDetail(entry.label, entry.value));
+      .forEach((entry) => {
+        const pair = appendDetail(entry.label, entry.value);
+        if (entry.label === "Location") pair.querySelector("dt").className = "visually-hidden";
+      });
 
     const hasInformation = Boolean(title.textContent || description.textContent || details.childElementCount);
     information.hidden = !hasInformation;
