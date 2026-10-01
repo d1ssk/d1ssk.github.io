@@ -24,12 +24,16 @@
         <button type="button" data-columns="2" aria-pressed="false">2列</button>
         <button type="button" data-columns="1" aria-pressed="false">1列</button>
       </div>
+      <button type="button" id="swap" disabled>位置を交換</button>
+      <button type="button" id="clear-selection" disabled>選択解除</button>
+      <span id="selection-status" role="status">0 / 2 枚を選択</span>
       <button type="button" id="undo" disabled>元に戻す</button>
       <button type="button" id="redo" disabled>やり直す</button>
       <button type="button" id="save" class="primary" disabled>保存</button>
       <span id="status" role="status">読み込み中…</span>
     </div>
     <p class="hint">画像にフォーカスして矢印キーでも移動できます。タッチでは画像右上の ⠿ をドラッグ。Escで移動を取り消せます。保存はローカルの公開HTMLに反映されます。</p>
+    <p class="hint">3列表示で同じ縦横比の写真を2枚「選択」し、「位置を交換」でその2枚だけを入れ替えられます。他の写真の順序と配置は変わりません。</p>
     <section aria-labelledby="active-title">
       <h2 id="active-title">公開 <span id="active-count"></span></h2>
       <div id="active" class="gallery editor-gallery" style="--columns:3"></div>

@@ -27,6 +27,7 @@ Open <http://localhost:8000/editor/>. From inside `portfolio/`, use `python3 scr
 - Arrange photographs and drawings in the **3-column** view by dragging an image. Neighbouring works move into place while dragging; the page scrolls near the top and bottom edges. On touchscreens, drag the **⠿** handle so the image itself remains available for normal scrolling.
 - Use **2列** / **1列** to preview the same sequence with fewer columns. The editor and public page share the same masonry layout calculation and preserve image proportions. Change the order in the 3-column view; the narrower views follow that order automatically.
 - **Delete** hides a work and moves it to the **非表示** section below. **復活** returns it to the end of the active list. Image files and metadata are retained, including after saving and restarting the editor.
+- In the 3-column view, use **選択** on two photos with the same aspect ratio, then **位置を交換** to swap only their positions without moving other photos. The editor and public gallery group nearby ratios within 0.3% of each group's smallest ratio, allowing small export/resize differences such as 1200×800 and 1200×802. Each group uses equal-ratio display frames with `object-fit: contain`, preserving layout without cropping or stretching images. Original image files are unchanged. **選択解除** clears the selection; swaps support undo, redo, drafts, and saving.
 - **元に戻す** / **やり直す** undo and redo changes in the current session. Focus an image and use arrow keys to reorder it. Escape cancels a drag.
 - Each work's **情報** button opens its metadata editor, including works in the hidden section. Edit title, **Location（場所）**, description, alternative text, and detail labels/values. Enter a shooting location and leave its **表示** checkbox selected to show the place without a visible label in the public viewer. Add custom entries such as materials or year, or remove entries you no longer need.
 - Under **詳細情報**, select **他の写真からコピー**, then choose a source thumbnail. Entries with labels absent from the current draft are appended with their original labels, values, and visibility settings. Existing labels are compared after trimming surrounding whitespace and are never overwritten, even when their values are empty. Copying again does not add duplicates. Both published and hidden works are available as sources; the current work is excluded. Review the preview, then use **変更を適用** and **保存** as usual. Copying remains part of the open dialog's edits, so **キャンセル** discards it and applying it supports Undo/Redo.
@@ -42,6 +43,7 @@ Run editor regression tests from the repository root:
 ```bash
 python3 -m unittest discover -s portfolio/scripts -p 'test_*.py'
 node portfolio/scripts/test_information.cjs
+node portfolio/scripts/test_layout.cjs
 ```
 
 ## Directory structure

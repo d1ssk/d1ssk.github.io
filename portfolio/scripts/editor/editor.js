@@ -5,6 +5,9 @@
   const save = document.querySelector('#save');
   const undo = document.querySelector('#undo');
   const redo = document.querySelector('#redo');
+  const swap = document.querySelector('#swap');
+  const clearSelection = document.querySelector('#clear-selection');
+  const selected = new Set();
   const draftKey = `portfolio-editor:${location.host}`;
   let collection = [], saved = null, works, revision, token, columns = 3;
   let history = [], future = [], drag, saving = false;
@@ -26,6 +29,22 @@
     save.disabled = saving || !dirty() || Boolean(drag);
     undo.disabled = saving || !history.length || Boolean(drag);
     redo.disabled = saving || !future.length || Boolean(drag);
+    for (const id of selected) if (!collection.includes(id)) selected.delete(id);
+    const pair = [...selected];
+    const compatible = pair.length === 2 && sameRatio(...pair);
+    swap.disabled = saving || Boolean(drag) || columns !== 3 || !compatible;
+    clearSelection.disabled = saving || Boolean(drag) || !selected.size;
+    document.querySelector('#selection-status').textContent = pair.length === 2 && !compatible
+      ? '縦横比が異なるため交換できません'
+      : `${selected.size} / 2 枚を選択`;
+    for (const [id, card] of cards) {
+      const button = card.querySelector('.select-swap');
+      button.hidden = !collection.includes(id);
+      button.disabled = saving || Boolean(drag) || columns !== 3 || (selected.size === 2 && !selected.has(id));
+      button.setAttribute('aria-pressed', String(selected.has(id)));
+      button.textContent = selected.has(id) ? '選択済み' : '選択';
+      card.classList.toggle('is-selected', selected.has(id));
+    }
     document.querySelector('#active-count').textContent = collection.length;
     document.querySelector('#excluded-count').textContent = Object.keys(works).length - collection.length;
     document.querySelector('#active-empty').hidden = collection.length > 0;
@@ -48,6 +67,8 @@
       if (included.has(id)) continue;
       const card = cards.get(id);
       excluded.append(card);
+      card.querySelector('img').style.removeProperty('aspect-ratio');
+      card.querySelector('img').style.removeProperty('object-fit');
       card.style.removeProperty('grid-row-end');
       card.querySelector('.order').textContent = id;
       card.querySelector('.toggle').textContent = '復活';
@@ -84,6 +105,25 @@
     collection.splice(from, 1);
     collection.splice(Math.max(0, Math.min(collection.length, target)), 0, id);
   }
+
+  function sameRatio(first, second) {
+    const ratios = window.portfolioLayoutRatios(collection.map(id => works[id].image));
+    const a = ratios[collection.indexOf(first)], b = ratios[collection.indexOf(second)];
+    return a != null && b != null && a === b;
+  }
+
+  swap.addEventListener('click', () => {
+    if (saving || drag || columns !== 3 || selected.size !== 2) return;
+    const [first, second] = [...selected];
+    if (!sameRatio(first, second)) return;
+    const a = collection.indexOf(first), b = collection.indexOf(second);
+    if (a < 0 || b < 0) return;
+    const previous = snapshot();
+    [collection[a], collection[b]] = [collection[b], collection[a]];
+    selected.clear();
+    commit(previous, '2枚の位置を交換しました · 未保存');
+  });
+  clearSelection.addEventListener('click', () => { selected.clear(); update(); });
 
   const metadataDialog = document.querySelector('#metadata-dialog');
   const metadataForm = document.querySelector('#metadata-form');
@@ -306,12 +346,22 @@
     edit.textContent = '情報';
     edit.setAttribute('aria-label', `${id} の情報を編集`);
     edit.addEventListener('click', () => { if (!saving && !drag) openMetadata(id); });
-    tools.append(edit, toggle, handle);
+    const select = document.createElement('button');
+    select.type = 'button';
+    select.className = 'select-swap';
+    select.setAttribute('aria-label', `${id} を位置交換用に選択`);
+    select.addEventListener('click', () => {
+      if (saving || drag || columns !== 3 || !collection.includes(id)) return;
+      if (selected.has(id)) selected.delete(id);
+      else if (selected.size < 2) selected.add(id);
+      update();
+    });
+    tools.append(select, edit, toggle, handle);
     const order = document.createElement('span');
     order.className = 'order';
     card.append(surface, tools, order);
     card.addEventListener('keydown', event => {
-      if (saving || drag || columns !== 3 || !collection.includes(id) || event.target === toggle || event.target === edit) return;
+      if (saving || drag || columns !== 3 || !collection.includes(id) || event.target === toggle || event.target === edit || event.target === select) return;
       const offsets = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -3, ArrowDown: 3 };
       if (!(event.key in offsets)) return;
       event.preventDefault();
@@ -321,7 +371,7 @@
       event.target.focus({ preventScroll: true });
     });
     card.addEventListener('pointerdown', event => {
-      if (saving || drag || columns !== 3 || !collection.includes(id) || event.button !== 0 || event.target.closest('.toggle, .edit-info')) return;
+      if (saving || drag || columns !== 3 || !collection.includes(id) || event.button !== 0 || event.target.closest('.toggle, .edit-info, .select-swap')) return;
       if (event.pointerType !== 'mouse' && !event.target.closest('.handle')) return;
       event.preventDefault();
       const rect = card.getBoundingClientRect();

@@ -11,6 +11,9 @@ button:hover { background: #eee9e1; }
 button:disabled { opacity: .4; cursor: default; }
 button[aria-pressed="true"], .primary { background: var(--text); color: var(--background); }
 #status { font-size: .8rem; color: var(--muted); }
+#selection-status { font-size: .8rem; color: var(--muted); }
+.editor-card.is-selected { outline: 3px solid var(--accent); outline-offset: 3px; }
+.card-tools .select-swap[aria-pressed="true"] { background: var(--text); color: var(--background); }
 .hint, .excluded p { font-size: .8rem; color: var(--muted); }
 .editor-gallery { grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); }
 .editor-card { position: relative; border-radius: .2rem; user-select: none; -webkit-user-select: none; }

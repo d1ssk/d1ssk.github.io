@@ -2,7 +2,7 @@
   "title": "",
   "location": "",
   "description": "",
-  "alt": "The silhouette of a person on a road lit by streetlights at night.",
+  "alt": "The silhouette of a person sitting outdoors beneath bright lights at night.",
   "details": [
     {
       "label": "Camera",
@@ -41,11 +41,11 @@
       "value": "2025-08-31 02:05:49 +09:00"
     }
   ],
-  "source": "assets/pool/DSC04137.JPG",
+  "source": "assets/pool/DSC04137-EDIT.jpg",
   "image": {
     "width": 1200,
-    "height": 800,
+    "height": 860,
     "fullWidth": 2400,
-    "fullHeight": 1600
+    "fullHeight": 1720
   }
 }
