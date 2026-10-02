@@ -9,7 +9,7 @@
     >
     <title>Daichi Sasaki</title>
     <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
-    <link rel="stylesheet" href="styles.css?v=project-indent-small-20261002">
+    <link rel="stylesheet" href="styles.css?v=home-v5-20261002">
     <!-- Shared GA4: production, top-level page views only. -->
     <script>
       (() => {
@@ -38,65 +38,79 @@
       </header>
 
       <main id="main" class="home-sections">
-        <section class="home-section projects" aria-labelledby="links-heading">
-          <h2 id="links-heading">Links</h2>
+        <div class="home-section projects explorations">
+          <ul class="project-list">
+            <li class="project-entry">
+              <h2>Interactive Physics Olio</h2>
+              <p class="project-description">
+                A collection of interactive explorations in physics.
+              </p>
+              <ul class="project-links" aria-label="Interactive Physics Olio links">
+                <li><a href="https://d1ssk.github.io/interactive-physics-olio/">English</a></li>
+                <li><a lang="ja" href="https://d1ssk.github.io/interactive-physics-olio/ja/">日本語</a></li>
+              </ul>
 
-          <section class="project-group" aria-labelledby="explorations-heading">
-            <h3 id="explorations-heading">Explorations</h3>
-            <ul class="project-list">
-              <li class="project-entry">
-                <h4>Interactive Physics Olio</h4>
-                <p class="project-description">
-                  A collection of interactive explorations in physics.
-                </p>
-                <ul class="project-links" aria-label="Interactive Physics Olio links">
-                  <li><a href="https://d1ssk.github.io/interactive-physics-olio/">English</a></li>
-                  <li><a lang="ja" href="https://d1ssk.github.io/interactive-physics-olio/ja/">日本語</a></li>
-                </ul>
+              <ul class="subproject-list">
+                <li class="subproject">
+                  <h3 id="cosmic-scale-heading">Cosmic Scale Explorer</h3>
+                  <ul class="project-links" aria-label="Cosmic Scale Explorer links">
+                    <li>
+                      <a href="https://d1ssk.github.io/olio-cosmic-scale/?scene=observable-universe&amp;lang=en">English</a>
+                    </li>
+                    <li>
+                      <a lang="ja" href="https://d1ssk.github.io/olio-cosmic-scale/?scene=observable-universe&amp;lang=ja">日本語</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
 
-                <ul class="subproject-list">
-                  <li class="subproject">
-                    <h5 id="cosmic-scale-heading">Cosmic Scale Explorer</h5>
-                    <ul class="project-links" aria-label="Cosmic Scale Explorer links">
-                      <li>
-                        <a href="https://d1ssk.github.io/olio-cosmic-scale/?scene=observable-universe&amp;lang=en">English</a>
-                      </li>
-                      <li>
-                        <a lang="ja" href="https://d1ssk.github.io/olio-cosmic-scale/?scene=observable-universe&amp;lang=ja">日本語</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+            <li class="project-entry">
+              <h2>Decoding GPT <span aria-hidden="true">/</span> <span class="jp-title" lang="ja">GPTを読み解く</span></h2>
+              <p class="project-description">
+                A visual and technical guide to how GPT works.
+              </p>
+              <ul class="project-links" aria-label="Decoding GPT links">
+                <li><a href="https://d1ssk.github.io/decoding-gpt/en/">English</a></li>
+                <li><a lang="ja" href="https://d1ssk.github.io/decoding-gpt/ja/">日本語</a></li>
+              </ul>
+            </li>
 
-              <li class="project-entry">
-                <h4>Decoding GPT <span aria-hidden="true">/</span> <span class="jp-title" lang="ja">GPTを読み解く</span></h4>
-                <p class="project-description">
-                  A visual and technical guide to how GPT works.
-                </p>
-                <ul class="project-links" aria-label="Decoding GPT links">
-                  <li><a href="https://d1ssk.github.io/decoding-gpt/en/">English</a></li>
-                  <li><a lang="ja" href="https://d1ssk.github.io/decoding-gpt/ja/">日本語</a></li>
-                </ul>
-              </li>
-
-              <li class="project-entry">
-                <h4>Chordscape</h4>
-                <p class="project-description">
-                  An interactive space for exploring chords and harmony.
-                </p>
-                <ul class="project-links" aria-label="Chordscape links">
-                  <li><a href="https://d1ssk.github.io/chordscape/">Open Chordscape</a></li>
-                </ul>
-              </li>
+            <li class="project-entry">
+              <h2>Chordscape</h2>
+              <p class="project-description">
+                An interactive space for exploring chords and harmony.
+              </p>
+              <ul class="project-links" aria-label="Chordscape links">
+                <li><a href="https://d1ssk.github.io/chordscape/">Open Chordscape</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <section class="home-section portfolio" aria-labelledby="portfolio-heading">
+            <div class="project-art">
+              <img
+                class="photo"
+                src="portfolio/assets/works/dsc04100/thumbnail.webp"
+                alt="Layers of mountains and distant water in hazy morning light."
+                width="1200"
+                height="800"
+              >
+            </div>
+            <h2 id="portfolio-heading">Photography &amp; More</h2>
+            <p class="project-description">
+              Photography, drawings, and other creations.
+            </p>
+            <ul class="project-links" aria-label="Photography &amp; More links">
+              <li><a href="portfolio/">View</a></li>
             </ul>
           </section>
-
-          <section class="project-group" aria-labelledby="tools-heading">
-            <h3 id="tools-heading">Tools</h3>
+          <section class="home-section projects tools" aria-labelledby="tools-heading">
+            <h2 id="tools-heading">Tools</h2>
             <ul class="project-list">
               <li class="project-entry">
-                <h4>Score Palette</h4>
+                <h3>Score Palette</h3>
                 <p class="project-description">
                   A tool for coloring notes in sheet music PDFs by note name.
                 </p>
@@ -106,26 +120,7 @@
               </li>
             </ul>
           </section>
-        </section>
-
-        <section class="home-section portfolio" aria-labelledby="portfolio-heading">
-          <div class="project-art">
-            <img
-              class="photo"
-              src="portfolio/assets/works/dsc04100/thumbnail.webp"
-              alt="Layers of mountains and distant water in hazy morning light."
-              width="1200"
-              height="800"
-            >
-          </div>
-          <h2 id="portfolio-heading">Photography &amp; More</h2>
-          <p class="project-description">
-            Photography, drawings, and other creations.
-          </p>
-          <ul class="project-links" aria-label="Photography &amp; More links">
-            <li><a href="portfolio/">View</a></li>
-          </ul>
-        </section>
+        </div>
       </main>
 
       <footer class="site-footer">

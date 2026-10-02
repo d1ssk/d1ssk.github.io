@@ -116,37 +116,28 @@ a:focus-visible {
   --hierarchy-indent: clamp(0.25rem, 0.8vw, 0.4rem);
 }
 
-.projects > h2 {
+.tools > h2 {
   border-top: 1px solid var(--heading);
   padding-top: 0.875rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0;
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.17em;
   line-height: 1.15;
   text-transform: uppercase;
 }
 
-.project-group {
+.right-column {
+  min-width: 0;
+}
+
+.tools {
+  margin-top: 2.75rem;
+}
+
+.projects > .project-list {
   padding-inline-start: var(--hierarchy-indent);
-}
-
-.project-group > .project-list {
-  padding-inline-start: var(--hierarchy-indent);
-}
-
-.project-group + .project-group {
-  margin-top: 2rem;
-}
-
-.project-group > h3 {
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.17em;
-  line-height: 1.3;
-  text-transform: uppercase;
 }
 
 .project-list,
@@ -162,7 +153,8 @@ a:focus-visible {
   padding-block: 1.5rem;
 }
 
-.project-entry > h4,
+.explorations .project-entry > h2,
+.project-entry > h3,
 .portfolio > h2 {
   font-size: 1.55rem;
   font-weight: 600;
@@ -196,7 +188,8 @@ a:focus-visible {
   margin-top: 1.125rem;
 }
 
-.subproject h5 {
+.subproject h3,
+.subproject h4 {
   font-size: 0.94rem;
   line-height: 1.45;
 }
@@ -271,7 +264,8 @@ a:focus-visible {
     padding-block: 1.375rem;
   }
 
-  .project-entry > h4,
+  .explorations .project-entry > h2,
+  .project-entry > h3,
   .portfolio > h2 {
     font-size: 1.125rem;
   }
@@ -281,7 +275,8 @@ a:focus-visible {
   }
 
   .project-description,
-  .subproject h5 {
+  .subproject h3,
+  .subproject h4 {
     font-size: 0.875rem;
   }
 
@@ -296,4 +291,13 @@ a:focus-visible {
   .site-footer {
     font-size: 0.68rem;
   }
+}
+
+/* Unlabelled project column, aligned with the column edge. */
+.explorations {
+  border-top: 1px solid var(--heading);
+}
+
+.explorations > .project-list {
+  padding-inline-start: 0;
 }
