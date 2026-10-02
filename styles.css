@@ -301,3 +301,9 @@ a:focus-visible {
 .explorations > .project-list {
   padding-inline-start: 0;
 }
+
+/* Omit the closing divider beneath Chordscape and Score Palette. */
+.explorations > .project-list > .project-entry:last-child,
+.tools > .project-list > .project-entry:last-child {
+  border-bottom: 0;
+}
