@@ -4,12 +4,12 @@
   "description": "Drawn in Procreate.\nMy attachment to this stuffed dog began before my earliest memories. Drawing it now, I feel a connection to a childhood self I can no longer remember.",
   "alt": "An illustration of a small brown-and-white dog on a white background.",
   "details": [],
-  "source": "assets/pool/ぽち.png",
+  "source": "assets/pool/output.png",
   "image": {
     "width": 834,
     "height": 1200,
-    "fullWidth": 1640,
-    "fullHeight": 2360
+    "fullWidth": 1668,
+    "fullHeight": 2400
   },
   "visibility": {}
 }
